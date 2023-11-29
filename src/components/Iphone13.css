@@ -1,0 +1,6 @@
+/* src/components/iPhone13.css */
+@import '../index.css';
+
+.iphone-13 {
+    @apply w-[375px] h-[812px] bg-gray-100 border-[16px] border-gray-400 rounded-[36px] overflow-hidden relative mx-auto my-12
+}
