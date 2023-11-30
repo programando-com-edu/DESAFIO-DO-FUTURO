@@ -4,7 +4,7 @@ import IPhone13 from '../components/Iphone13';
 import Navbar from '../components/Navbar.jsx';
 import CustomCarousel from '../components/CustomCarousel.jsx';
 import bannerDesafio from '../assets/bannerDesafio.jpeg';
-
+import {mostRelevantData, lastWeekData, mostViewedData} from '../components/CarouselData.jsx';
 
 function Home() {
     const settings = {
@@ -24,11 +24,11 @@ function Home() {
         </div>
         <p className='text-center text-gray-900 text-2xl mt-6 font-bold'>Vídeos</p>
         <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Mais relevantes</p>
-        <CustomCarousel />
+        <CustomCarousel dataItems={mostRelevantData} />
         <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Mais vistos</p>
-        <CustomCarousel />
+        <CustomCarousel dataItems={mostViewedData} />
         <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Últimas semanas</p>
-        <CustomCarousel />
+        <CustomCarousel dataItems={lastWeekData} />
 
     </IPhone13>
   );
