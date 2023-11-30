@@ -1,24 +1,19 @@
 // src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 import IPhone13 from '../components/Iphone13';
 import Navbar from '../components/Navbar.jsx';
 import Tabs from '../components/Tabs.jsx';
-import bannerDesafio from '../assets/bannerDesafio.jpeg';
+import Tentativas from '../components/Tentativas.jsx';
+import Questoes from '../components/Questoes.jsx';
+import Resultado from '../components/Resultado.jsx';
 import videoCover from '../assets/videoCover.png';
 
 import { PlayCircle } from 'lucide-react';
 
 
 function Visualizar() {
-    const settings = {
-        showArrows: false,
-        centerMode: true,
-        emulateTouch: true,
-        itemPadding: '30px',
-        showThumbs: false,
-        showStatus: false,
-        showIndicators: false 
-    };
+  const [step, setStep] = useState(1);
+
   return (
     <IPhone13>
         <Navbar/>
@@ -30,7 +25,9 @@ function Visualizar() {
 
           <Tabs />
 
-          <div>questionario</div>
+          {step === 1 && <Tentativas stepChange={setStep} />}
+          {step === 2 && <Questoes stepChange={setStep} />}
+          {step === 3 && <Resultado stepChange={setStep} />}
         </div>
     </IPhone13>
   );

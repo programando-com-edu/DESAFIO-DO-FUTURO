@@ -1,9 +1,11 @@
-function  Button({icon, label, ...props}) {
+import { Link } from "react-router-dom";
+
+function  Button({icon, label, path, variant = 'primary', ...props}) {
   return (
-      <button {...props} className="flex bg-blue w-full text-gray-200 items-center justify-center py-3 rounded gap-2 text-lg shadow-lg">
+      <Link to={path} {...props} className={`flex w-full ${variant === 'primary' ? 'bg-blue text-gray-200' : 'border border-blue text-blue'}  items-center justify-center py-3 rounded gap-2 text-lg shadow-lg`}>
         {icon}
         {label}
-      </button>
+      </Link>
   );
 }
 export default Button;
