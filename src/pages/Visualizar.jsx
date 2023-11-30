@@ -6,19 +6,10 @@ import Tabs from '../components/Tabs.jsx';
 import bannerDesafio from '../assets/bannerDesafio.jpeg';
 import videoCover from '../assets/videoCover.png';
 
-import { PlayCircle } from 'lucide-react';
+import { PlayCircle, Clock } from 'lucide-react';
 
 
 function Visualizar() {
-    const settings = {
-        showArrows: false,
-        centerMode: true,
-        emulateTouch: true,
-        itemPadding: '30px',
-        showThumbs: false,
-        showStatus: false,
-        showIndicators: false 
-    };
   return (
     <IPhone13>
         <Navbar/>
@@ -29,8 +20,17 @@ function Visualizar() {
           </div>
 
           <Tabs />
+          <div className='px-4 font-semibold '>
+            <p className='text-lg'>Desafio do futuro: Marcos e Montenegro Antero têm convidado especial como “cobaia”</p>
+            <div className='flex items-center  justify-between my-4'>
+              <div className='flex items-center'>
+                <Clock />
+                <p className=' ml-2'>7 minutos</p>
+              </div>
+              <p className='text-sm'>Transmitido em 24/11/23</p>
+            </div>
 
-          <div>visualizar</div>
+          </div>
         </div>
     </IPhone13>
   );
