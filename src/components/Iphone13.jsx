@@ -11,7 +11,7 @@ const IPhone13 = ({ classes = "", children }) => {
 
   return (
     <div className={`iphone-13 ${classes}`}>
-      <div className="h-[732px] overflow-auto no-scroll pb-4 bg-gray-200">
+      <div className="h-[732px] overflow-auto no-scroll pb-8 bg-gray-200">
         {children}
       </div>
       <div className="absolute rounded-b-xl bottom-0 py-3 border-t border-gray-300 bg-gray-200 w-[343px] grid grid-cols-3 place-items-center text-2xl">

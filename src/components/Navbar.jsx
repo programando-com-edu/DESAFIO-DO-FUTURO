@@ -15,9 +15,9 @@ function Navbar() {
         </div>
       </div>
       <div className="h-14 flex items-center justify-between mx-6">
-        <div className="flex items-center gap-2 text-pallete-100 text-2xl">
+        <div className="flex items-center gap-2 text-pallete-100 text-lg">
           <FaBars />
-          <p className="font-bold">Verdes Mares</p>
+          <p className="font-extrabold">VERDES MARES</p>
         </div>
         <img src={logoGlobo} alt="" />
       </div>
