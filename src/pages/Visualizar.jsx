@@ -3,10 +3,13 @@ import React from 'react';
 import IPhone13 from '../components/Iphone13';
 import Navbar from '../components/Navbar.jsx';
 import Tabs from '../components/Tabs.jsx';
-import bannerDesafio from '../assets/bannerDesafio.jpeg';
+import Button from '../components/Button.jsx';
 import videoCover from '../assets/videoCover.png';
+import {mostRelevantData} from '../components/CarouselData.jsx';
+import CustomCarousel from '../components/CustomCarousel.jsx';
 
-import { PlayCircle, Clock } from 'lucide-react';
+
+import { PlayCircle, Clock, BookCheck } from 'lucide-react';
 
 
 function Visualizar() {
@@ -29,7 +32,10 @@ function Visualizar() {
               </div>
               <p className='text-sm'>Transmitido em 24/11/23</p>
             </div>
-
+            <Button icon={<BookCheck />} label={'Responder questionário'}/>
+            <p className=' text-gray-900 text-xl mt-4 font-bold'>Vídeos relacionados</p>
+            <CustomCarousel dataItems={mostRelevantData} />
+            
           </div>
         </div>
     </IPhone13>
