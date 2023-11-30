@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel-div {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+  overflow-y: scroll; /* Adiciona uma fina barra de rolagem no Firefox */
+  -ms-overflow-style: none; /* IE 11 */
+}
+.carousel-div::-webkit-scrollbar {
+  width: 0px; /* Largura da barra de rolagem para navegadores WebKit (Chrome, Safari, etc.) */
+}
+
+.carousel-div::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Cor da "thumb" (parte móvel) da barra de rolagem */
+}
+
+.carousel-div::-webkit-scrollbar-track {
+  background-color: transparent; /* Cor da "track" (parte fixa) da barra de rolagem */
+}
