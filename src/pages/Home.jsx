@@ -23,12 +23,22 @@ function Home() {
             <img src={bannerDesafio} alt="" className='rounded-lg w-[300px]' />
         </div>
         <p className='text-center text-gray-900 text-2xl mt-6 font-bold'>Vídeos</p>
-        <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Mais relevantes</p>
-        <CustomCarousel dataItems={mostRelevantData} />
-        <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Mais vistos</p>
-        <CustomCarousel dataItems={mostViewedData} />
-        <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Últimas semanas</p>
-        <CustomCarousel dataItems={lastWeekData} />
+        <div className='space-y-6'>
+          <div>
+            <p className='ml-6 text-gray-900 text-xl font-bold'>Mais relevantes</p>
+            <CustomCarousel dataItems={mostRelevantData} />
+          </div>
+
+          <div>
+            <p className='ml-6 text-gray-900 text-xl font-bold'>Mais vistos</p>
+            <CustomCarousel dataItems={mostViewedData} />
+          </div>
+
+          <div>
+            <p className='ml-6 text-gray-900 text-xl font-bold'>Últimas semanas</p>
+            <CustomCarousel dataItems={lastWeekData} />
+          </div>
+        </div>
 
     </IPhone13>
   );
