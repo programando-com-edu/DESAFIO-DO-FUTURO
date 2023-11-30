@@ -19,10 +19,10 @@ function Home() {
   return (
     <IPhone13>
         <Navbar/>
-        <div className='mt-6 flex justify-center flex-shrink-0'>
+        <div className='mt-2 flex justify-center flex-shrink-0'>
             <img src={bannerDesafio} alt="" className='rounded-lg w-[300px]' />
         </div>
-        <p className='text-center text-gray-900 text-2xl mt-4 font-bold'>Vídeos</p>
+        <p className='text-center text-gray-900 text-2xl mt-6 font-bold'>Vídeos</p>
         <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Mais relevantes</p>
         <CustomCarousel />
         <p className='ml-6 text-gray-900 text-xl mt-2 font-bold'>Mais vistos</p>
