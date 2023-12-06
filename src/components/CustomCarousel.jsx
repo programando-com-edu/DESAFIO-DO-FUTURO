@@ -18,12 +18,12 @@ function CustomCarousel({ dataItems }) {
     return (
         <Carousel {...settings} className='mt-2 ml-3'>
             {dataItems && dataItems.map(item => (
-                <div key={item.id} className='mx-2 h-36 flex justify-center items-end flex-shrink-0 relative'>
+                <a  href='/video' key={item.id} className='mx-2 h-36 flex justify-center items-end flex-shrink-0 relative'>
                     <img src={item.link} alt="" className='absolute rounded-lg' />
-                    <p className='z-10 text-sm text-white text-left font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>
+                    <p className='z-10 px- text-sm text-white text-left font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>
                         {item.text}
                     </p>
-                </div>
+                </a>
             ))}
         </Carousel>
     );

@@ -1,6 +1,7 @@
 // src/App.js
 import React from "react";
 import logoGlobo from "../assets/logoGlobo.png";
+import logo from "../assets/logo.png";
 import { FaBars, FaWifi } from "react-icons/fa";
 import { FaBatteryHalf } from "react-icons/fa6";
 
@@ -16,10 +17,9 @@ function Navbar() {
       </div>
       <div className="h-14 flex items-center justify-between mx-6">
         <div className="flex items-center gap-2 text-pallete-100 text-lg">
-          <FaBars />
-          <p className="font-extrabold">VERDES MARES</p>
+          <a href="https://ge.globo.com/ce/" target="blank" className="font-extrabold">VERDES MARES</a>
         </div>
-        <img src={logoGlobo} alt="" />
+        <img src={logo} alt="" className="w-10 h-10" />
       </div>
     </div>
   );

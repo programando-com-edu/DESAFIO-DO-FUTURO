@@ -32,7 +32,7 @@ function Visualizar() {
               </div>
               <p className='text-sm'>Transmitido em 24/11/23</p>
             </div>
-            <Button icon={<BookCheck />} label={'Responder questionário'} path="/questionario"/>
+            <Button icon={<BookCheck />} label={'Responder Quiz'} path="/questionario"/>
             <p className=' text-gray-900 text-xl mt-4 font-bold'>Vídeos relacionados</p>
             <CustomCarousel dataItems={mostRelevantData} />
             

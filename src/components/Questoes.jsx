@@ -25,7 +25,7 @@ function Questoes({stepChange}) {
             </div>
             <div className="space-x-2">
                 <input type="radio" name="q1" id="q1i3" />
-                <label htmlFor="q1i3">Ciências Agrárias</label>
+                <label htmlFor="q1i3">Ciências da Saúde</label>
             </div>
             <div className="space-x-2">
                 <input type="radio" name="q1" id="q1i4" />
